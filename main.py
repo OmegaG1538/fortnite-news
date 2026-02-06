@@ -2,7 +2,9 @@ import discord
 import requests
 import asyncio
 
-TOKEN = "MTQ2OTI1NTI3NTg5NzY4NDA5MA.GLB44Y.t4MhQx0j9cYD-LwVKadicUMb3XhX_C6xaoXYsM"
+import os
+
+TOKEN = os.environ["TOKEN"]
 
 intents = discord.Intents.default()
 intents.message_content = True
